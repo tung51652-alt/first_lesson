@@ -1,0 +1,40 @@
+def tim_cung_hoang_dao(ngay, thang):
+  
+    if (thang == 3 and ngay >= 21) or (thang == 4 and ngay <= 19):
+        return "Bạch Dương (Aries)"
+    elif (thang == 4 and ngay >= 20) or (thang == 5 and ngay <= 20):
+        return "Kim Ngưu (Taurus)"
+    elif (thang == 5 and ngay >= 21) or (thang == 6 and ngay <= 21):
+        return "Song Tử (Gemini)"
+    elif (thang == 6 and ngay >= 22) or (thang == 7 and ngay <= 22):
+        return "Cự Giải (Cancer)"
+    elif (thang == 7 and ngay >= 23) or (thang == 8 and ngay <= 22):
+        return "Sư Tử (Leo)"
+    elif (thang == 8 and ngay >= 23) or (thang == 9 and ngay <= 22):
+        return "Xử Nữ (Virgo)"
+    elif (thang == 9 and ngay >= 23) or (thang == 10 and ngay <= 22):
+        return "Thiên Bình (Libra)"
+    elif (thang == 10 and ngay >= 23) or (thang == 11 and ngay <= 22):
+        return "Bọ Cạp (Scorpio)"
+    elif (thang == 11 and ngay >= 23) or (thang == 12 and ngay <= 21):
+        return "Nhân Mã (Sagittarius)"
+    elif (thang == 12 and ngay >= 22) or (thang == 1 and ngay <= 19):
+        return "Ma Kết (Capricorn)"
+    elif (thang == 1 and ngay >= 20) or (thang == 2 and ngay <= 18):
+        return "Bảo Bình (Aquarius)"
+    elif (thang == 2 and ngay >= 19) or (thang == 3 and ngay <= 20):
+        return "Song Ngư (Pisces)"
+    else:
+        return "không hợp lệ"
+
+
+
+while True:
+    day = int(input("nhập ngày sinh: "))
+    month = int(input("nhập tháng sinh: "))
+
+    print(tim_cung_hoang_dao(day,month))
+
+    print("Ban muốn tiếp tục không? (y/n)")
+    if(input() == "n"):
+        break
